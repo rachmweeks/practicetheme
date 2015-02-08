@@ -1,0 +1,92 @@
+/*
+Theme Name: WP_Practice1
+Description: A theme to learn and practice Wordpress theme building.
+Author: Rachel Weeks
+Version: 1.0
+*/
+
+
+body {
+	font-family: 'Raleway', sans-serif;	margin: auto;
+	font-weight: 300;
+	color: purple;
+	background-color: #ddd;
+	width: 80%;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 3em;
+	font-weight: 800;
+	margin: 20px 0 4px 0;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: 300;
+	color: #444;
+	margin: 0 0 40px 0;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1.1em;
+	color: #444;
+	margin: 20px 0 10px 20px;
+}
+
+nav {
+	position: relative;
+	text-align: center;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 2em;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	margin: 0;
+	display: inline;
+	padding-left: 1em;
+	padding-right: 2em;
+}
+
+section img {
+	margin: auto;
+	padding: 20px;
+	display: inline;
+	width: 200px;
+}
+
+article p {
+	color: #444;
+	margin: 0 0 0 20px;
+}
+
+footer {
+	font-size: .8em;
+	border-top: 1px dotted #ccc;
+	margin-top: 2em;
+	padding-top: 2em;
+	padding-bottom: 5em;
+}
+
+footer p {
+	color: #444;
+	text-align: center;
+}
+
+section#intro {
+	text-align: center;
+}
