@@ -80,6 +80,7 @@ footer {
 	margin-top: 2em;
 	padding-top: 2em;
 	padding-bottom: 5em;
+	clear: both;
 }
 
 footer p {
@@ -89,4 +90,20 @@ footer p {
 
 section#intro {
 	text-align: center;
+	width:80%;
+	float: left;
+}
+
+section#blog {
+	width:80%;
+	float: left;
+	margin-bottom: 80px;
+}
+
+section#aside {
+	width:20%;
+	float: left;
+	color: #444;
+	font-size: .8em;
+
 }

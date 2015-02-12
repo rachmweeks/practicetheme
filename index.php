@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset = "utf-8">
-	<title><?php bloginfo('name');?></title>
-	<link href='http://fonts.googleapis.com/css?family=Raleway:800,300' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url');?>"/>
-	
-</head>
+
+<?php get_header();?>
 
 <body>
 	<header>
 		<h1><?php bloginfo('name'); ?></h1>
 		<h2><?php bloginfo('description');?></h2>
 		<nav>
-			<ul>
-				<li><a href="<?php bloginfo('url');?>">Home</a></li>
-				<li>About</li>
-			</ul>
+			<?php wp_nav_menu(array('menu' => 'Main Nav')); ?>
 		</nav>
 	</header>
 	<section id="intro">
@@ -25,7 +15,10 @@
 		<img src="<?php bloginfo('stylesheet_directory');?>/img/coffee.jpg" alt="coffee cup">
 		<img src="<?php bloginfo('stylesheet_directory');?>/img/hiro.jpg" alt="coffee cup">
 	</section>
-	<section>
+	<section id="aside">
+		<?php get_sidebar();?>
+	</section>
+	<section id="blog">
 		<h3>Blogs</h3>
 			<?php if(have_posts()) : while(have_posts()) : the_post();?>
 				<article>
@@ -35,9 +28,6 @@
 			<?php endwhile; else:?>
 			<?php endif;?>
 	</section>
-	<footer>
-		<p>Looking forward to working with you all!</p>
-	</footer>
-</body>
+	
+	<?php get_footer();?>
 
-</html>
