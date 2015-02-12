@@ -90,7 +90,7 @@ footer p {
 
 section#intro {
 	text-align: center;
-	width:80%;
+	width:75%;
 	float: left;
 }
 
@@ -105,5 +105,6 @@ section#aside {
 	float: left;
 	color: #444;
 	font-size: .8em;
+	padding: 10px;
 
 }
